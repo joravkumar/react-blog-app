@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+
 function Header() {
-    return<div>
-<div className="container">
+  return <div>
+    <div>
+      <div className="container">
         <div className="header">
           <div className="header-nav">
             <nav className="navbar navbar-default">
@@ -16,11 +19,10 @@ function Header() {
 
               <div className="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav">
-                  <li className="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
-                  <li className="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
-                  <li className="hvr-bounce-to-bottom"><a href="Portfolio.html">Portfolio</a></li>
-                  <li className="hvr-bounce-to-bottom"><a href="Pages.html">Pages</a></li>
-                  <li className="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
+                  <li className="hvr-bounce-to-bottom active"><Link to="/">Home</Link></li>
+                  <li className="hvr-bounce-to-bottom"> <Link to="/About">About</Link></li>
+                  <li className="hvr-bounce-to-bottom"> <Link to="/Portfolio">Portfolio</Link></li>
+                  <li className="hvr-bounce-to-bottom"><Link to="/Contact">Contact</Link></li>
                 </ul>
                 <div className="sign-in">
                   <ul>
@@ -34,8 +36,11 @@ function Header() {
         </div>
 
       </div>
-      </div>
-      };
+    </div>
+  </div>
 
-      export default Header;
-      
+
+};
+
+export default Header;
+
